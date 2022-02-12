@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rapid Ticketing Marketplace
 
-## Getting Started
+## Description
 
-First, run the development server:
+We are developing a Ticketing system which creates tickets in the form of NFTs. These tickets will contain information about the seat number, price, names etc. Most importantly, we will also be able to make these tickets in mass. The ticket checking system for NFTs will also be implemented. Additionally, the tickets will be transferable and tradeable amongst users.
 
-```bash
-npm run dev
-# or
-yarn dev
+## User Story
+
+```
+AS A person interested in the digital ticketing system and NFTs
+I WANT to generate/buy tickets
+SO THAT I can book/host events AND use the tickets as NFTs
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Motivation for development
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## APIs Used:
 
-## Learn More
+1. 
 
-To learn more about Next.js, take a look at the following resources:
+## Link to Deployed Application
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> Repository Link: https://github.com/nevan-dsouza/billboard
+>
+> Deployed Site Link: https://nevan-dsouza.github.io/billboard/
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Application Wireframe
 
-## Deploy on Vercel
+![Wireframe of our Project](./images/wireframe2.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Screenshot of Application in Use
+![Project Page](./images/project1.png)
+
+## Rough Breakdown of Tasks
+
+* Create a skeleton HTML
+* Create custom CSS styling for the page (using bulma)
+* Code a functional search bar
+* Code container with the youtube video and the song title
+* Code the list container with event listeners that change the youtube video container
+* Code storage of last searched item and display it the next time user visits website
+* Code modal window giving error if user does not input a valid country name
+
+## Potential Future Features
+
+ Potential features can include:
+ * Filters for searching (artist, genre, etc.)
+ * Displaying top artists instead of the top songs (if user toggles this feature)
+ * Sort filter for displaying results (most viewed video, recently published, artist, etc.)
+ * Display more information regarding countries that don’t have top 20 songs
+ * Carousel of globally trending artists and songs
+ * About Us page
+ * Better aesthetic and minimalist design
+ * Transitions and animations of different sections of the application
