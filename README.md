@@ -23,6 +23,12 @@ npm run dev
 yarn dev
 ```
 
+```bash
+npx hardhat run scripts/deploy.js --network localhost
+```
+
+
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
