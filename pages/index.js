@@ -27,7 +27,8 @@ export default function Home() {
     const tokenContract = new ethers.Contract(nftaddress, NFT.abi, provider)
     const marketContract = new ethers.Contract(nftmarketaddress, Market.abi, provider)
     const data = await marketContract.fetchTickets()
-    
+    const eventTypeArr = ["Sports", "Movie", "Leisure"]
+    const stadiumArr = ["JN Stadium", "Arun Jaitley Stadium"]
     const items = await Promise.all(data.map(async i => {
       const tokenUri = await tokenContract.tokenURI(i.tokenId)
       const meta = await axios.get(tokenUri)
@@ -37,9 +38,10 @@ export default function Home() {
         itemId: i.ticketId.toNumber(),
         seller: i.seller,
         owner: i.owner,
-        image: meta.data.image,
         name: meta.data.name,
         description: meta.data.description,
+        eventType: eventTypeArr[meta.data.eventType-1],
+        stadium: stadiumArr[meta.data.stadium-1],
       }
       return item
     }))
@@ -69,7 +71,17 @@ export default function Home() {
             nfts.map((nft, i) => (
               <div key={i} className="border shadow rounded-xl overflow-hidden">
                 <div className="p-4">
-                  <p style={{ height: '0px' }} className="text-2xl font-semibold">{nft.name}</p>
+                  <p style={{ height: '0px' }} className="text-2xl font-semibold">{nft.description}</p>
+                  <div style={{ height: '20px', overflow: 'hidden' }}>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <p style={{ height: '0px' }} className="text-2xl font-semibold">{nft.eventType}</p>
+                  <div style={{ height: '20px', overflow: 'hidden' }}>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <p style={{ height: '0px' }} className="text-2xl font-semibold">{nft.stadium}</p>
                   <div style={{ height: '20px', overflow: 'hidden' }}>
                   </div>
                 </div>
