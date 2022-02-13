@@ -29,9 +29,7 @@ I am an organization that wants to generate mass tickets for an event I am organ
 
 ## Link to Deployed Application
 
-> Repository Link: https://github.com/nevan-dsouza/billboard
->
-> Deployed Site Link: https://nevan-dsouza.github.io/billboard/
+> Repository Link: https://github.com/EmperorRP/hacknitp-CryptoCoolDudes
 
 
 ```shell
