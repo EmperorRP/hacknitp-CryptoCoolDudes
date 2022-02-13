@@ -18,6 +18,11 @@ function Marketplace({ Component, pageProps }) {
               Sell Ticket
             </a>
           </Link>
+          <Link href="/masssell">
+            <a className="mr-6 text-pink-500">
+              Mass Sell
+            </a>
+          </Link>
         </div>
       </nav>
       <Component {...pageProps} />

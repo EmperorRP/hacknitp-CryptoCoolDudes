@@ -62,7 +62,7 @@ contract TicketMarket is ReentrancyGuard {
             tokenId,
             nftContract,
             payable(address(0)),
-            payable(msg.sender),            
+            payable(msg.sender),
             false
         );
 
@@ -88,10 +88,7 @@ contract TicketMarket is ReentrancyGuard {
     {
         uint256 price = _tickets[itemId].price;
         uint256 tokenId = _tickets[itemId].tokenId;
-        require(
-            msg.value == price,
-            "You must pay the price of the item"
-        );
+        require(msg.value == price, "You must pay the price of the item");
 
         _tickets[itemId].seller.transfer(msg.value);
         IERC721(nftContract).transferFrom(address(this), msg.sender, tokenId);
@@ -108,7 +105,7 @@ contract TicketMarket is ReentrancyGuard {
 
         TicketItem[] memory items = new TicketItem[](unsoldItemCount);
         for (uint256 i = 0; i < itemCount; i++) {
-            if (_tickets[i+1].owner == address(0)) {
+            if (_tickets[i + 1].owner == address(0)) {
                 uint256 currentId = i + 1;
                 TicketItem storage currentItem = _tickets[currentId];
                 items[currentIndex] = currentItem;
@@ -164,5 +161,41 @@ contract TicketMarket is ReentrancyGuard {
             }
         }
         return items;
+    }
+
+    function createMarketItemMass(
+        address nftContract,
+        uint256[] memory price,
+        uint256 tokenId
+    ) public payable nonReentrant {
+        // require(msg.value == listingFee, "You must pay the listing fee");
+        require(price[0] > 0, "Price must be greater than 0");
+
+        _ticketIds.increment();
+        uint256 ticketId = _ticketIds.current();
+
+        _tickets[ticketId] = TicketItem(
+            ticketId,
+            price[0]*1 ether,
+            tokenId,
+            nftContract,
+            payable(address(0)),
+            payable(msg.sender),
+            false
+        );
+
+        IERC721(nftContract).transferFrom(msg.sender, address(this), tokenId);
+
+        emit TicketCreated(
+            ticketId,
+            price[0],
+            ticketId,
+            nftContract,
+            msg.sender,
+            address(0),
+            false
+        );
+        // console.log(_tickets[ticketId].owner,ticketId);
+        // console.log(_tickets[2].owner);
     }
 }
