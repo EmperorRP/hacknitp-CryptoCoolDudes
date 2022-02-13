@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar{
+    background:linear-gradient(#b362ff,#5e60ce);
+}
+
+a.navbar-brand{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-icon{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 0.5rem;
+}
+
+.logo-text{
+    color: white;
+    font-size: small;
+    font-weight: bolder;
+    border-color: black;
+}
+
+a.nav-link{
+    color: rgb(211, 211, 211);
+    font-weight: bold; 
+    transition-duration: 0.4s;  
+}
+
+a.nav-link:hover{
+    color: white;
+}
+
+.title{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin: 30px auto 30px auto;
+}
+
+.row{
+    gap:20px;
+}
+
+
+.parent1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.item1 { grid-area: 1 / 1 / 2 / 2; }
+.item2 { grid-area: 1 / 2 / 2 / 3; }
+.item3 { grid-area: 1 / 3 / 2 / 4; }
+.item4 { grid-area: 1 / 4 / 2 / 5; }
+    

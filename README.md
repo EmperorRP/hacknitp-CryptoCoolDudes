@@ -30,6 +30,9 @@ npx hardhat help
 ```
 
 ```bash
+
+npx hardhat run scripts/deploy.js --network localhost
+
 npm run dev
 ```
 

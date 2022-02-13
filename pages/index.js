@@ -10,8 +10,8 @@ import {
 import NFT from '../artifacts/contracts/NFT.sol/NFT.json'
 import Market from '../artifacts/contracts/TicketMarket.sol/TicketMarket.json'
 
-let rpcEndpoint = null
-
+let rpcEndpoint = ""
+// let rpcEndpoint = null;
 if (process.env.NEXT_PUBLIC_WORKSPACE_URL) {
   rpcEndpoint = process.env.NEXT_PUBLIC_WORKSPACE_URL
 }
