@@ -1,7 +1,6 @@
 // Declarations
 let generateBtnEl = document.getElementById('generate-btn');
 let marketplaceBtnEl = document.getElementById('marketplace-btn');
-// Functions
 // Navbar Burger
 function navbarBurger(){
     var burger = document.querySelector('.burger');
@@ -24,3 +23,6 @@ marketplaceBtnEl.addEventListener('click',function(){
 
 // Callings
 navbarBurger();
+
+
+
