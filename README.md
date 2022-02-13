@@ -1,8 +1,23 @@
-# Basic Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
 
-Try running some of the following tasks:
+We are developing a Ticketing system which creates tickets in the form of NFTs. These tickets will contain information about the seat number, price, names etc. Most importantly, we will also be able to make these tickets in mass. The ticket checking system for NFTs will also be implemented. Additionally, the tickets will be transferable and tradeable amongst users.
+
+## User Story
+
+```
+AS A person interested in the digital ticketing system and NFTs
+I WANT to generate/buy tickets
+SO THAT I can book/host events AND use the tickets as NFTs
+```
+
+
+
+## Link to Deployed Application
+
+> Repository Link: https://github.com/nevan-dsouza/billboard
+>
+> Deployed Site Link: https://nevan-dsouza.github.io/billboard/
+
 
 ```shell
 npx hardhat accounts
@@ -13,21 +28,10 @@ npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
 ```
-## Getting Started
-
-First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
-
-```bash
-npx hardhat run scripts/deploy.js --network localhost
-```
-
-
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
