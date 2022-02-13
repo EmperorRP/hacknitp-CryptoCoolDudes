@@ -1,10 +1,15 @@
 # Rapid Ticket Marketplace
 
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+
 A ticket booking platform where organizations can generate their own tickets or customers can buy the tickets. These tickets will contain information about the seat number, price, names etc. Every ticket is unique and hence it is Non-Fungible. We are trying to use the fact that these tickets can be treated as NFTs and be bought, sold and traded on our platform. The setup is in 3 very simple steps and we make it so that it is extremely fast, reliable and very easy. The tickets can also be generated and bought in mass. This is all done with the help of trade of Ether(ETH) and could be backed by Polygon and Ethereum. 
 
 Submission Links:
 
 Presentation: https://www.canva.com/design/DAE4On68Pvw/MaXwYBJIVvcvdBma45Tvhw/view?utm_content=DAE4On68Pvw&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
+
 Video: https://www.youtube.com/watch?v=aUUva2DtmWo&ab_channel=SaiLeelaRahulPujari
 
 
@@ -111,3 +116,10 @@ to
 ```bash
   let rpcEndpoint = "https://rpc-mainnet.maticvigil.com"
 ```
+
+[contributors-shield]: https://img.shields.io/github/contributors/EmperorRP/hacknitp-CryptoCoolDudes.svg?style=for-the-badge
+[contributors-url]: https://github.com/EmperorRP/hacknitp-CryptoCoolDudes/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/EmperorRP/hacknitp-CryptoCoolDudes.svg?style=for-the-badge
+[forks-url]: https://github.com/EmperorRP/hacknitp-CryptoCoolDudes/network/members
+[stars-shield]: https://img.shields.io/github/stars/EmperorRP/hacknitp-CryptoCoolDudes.svg?style=for-the-badge
+[stars-url]: https://github.com/EmperorRP/hacknitp-CryptoCoolDudes/stargazers
