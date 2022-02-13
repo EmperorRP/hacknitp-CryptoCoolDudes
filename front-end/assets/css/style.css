@@ -4,6 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Navbar */
 .navbar{
     background:linear-gradient(#b362ff,#5e60ce);
 }
@@ -38,6 +39,8 @@ a.nav-link{
 a.nav-link:hover{
     color: white;
 }
+
+/* ---------------------------------------------- */
 
 /* Banner Container */
 .banner-container{
@@ -97,7 +100,8 @@ a.nav-link:hover{
     }
   }
     
-
+/* -------------------------------------------------- */
+/* HOW IT WORKS SECTION */
 .instructions-section{
     display: flex;
     flex-direction: column;
@@ -105,16 +109,6 @@ a.nav-link:hover{
     justify-content: center;
     /* background-color: pink; */
 }
-    /* margin: 40px;
-    padding: 40px;
-    background-color: pink;
-    width: 1286px;
-    height: 461px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 8rem; */
 
 #inst-header{
     font-size: 2.5rem;
@@ -129,6 +123,16 @@ a.nav-link:hover{
     gap: 100px;
 }
 
+#inst-header{
+    font-size: 2.5rem;
+    text-decoration: underline rgb(83, 83, 83);
+    text-underline-offset: 10px;
+    text-underline-position: under;
+    text-decoration-thickness: 2px;
+    margin-bottom: 20px;
+}
+
+/* CARDS */
 .card{
     height: 384px;
     border-radius: 20px;
@@ -149,9 +153,6 @@ a.nav-link:hover{
     /* background-color: blue; */
 }
 
-/* div.inst-layout.i-3{
-} */
-
 .number{
     font-size: 5rem;
     width: 3rem;
@@ -163,7 +164,7 @@ div.card{
 }
 
 div.card:hover{
-    box-shadow:  10px 10px 10px rgb(82, 82, 82);
+    box-shadow:  0px 10px 10px rgb(82, 82, 82);
 }
 
 .generate-container{
@@ -175,6 +176,7 @@ div.card:hover{
     gap: 100px;
 }
 
+/* GENERATE TICKETS SECTION */
 .generate-section{
     margin: 40px;
     padding: 40px;
@@ -184,6 +186,7 @@ div.card:hover{
     flex-direction: column;
     margin-top: 20px;
     justify-content: center;
+    align-items: center;
     color: white;
     background: linear-gradient(#4361ee,#b5179e);
     border-radius: 35px;
@@ -202,8 +205,17 @@ div.card:hover{
 .btn{
     width: 20rem;
     border-radius: 50px;
+    background-color: rgb(117, 4, 255);
+    color: #ffffff;
+    border: none;
 }
 
+.btn:hover{
+    background-color: #fff;
+    color: black;
+}
+
+/* MARKETPLACE SECTION */
 .marketplace-container{
     margin: 40px;
     display: flex;
@@ -220,6 +232,25 @@ div.card:hover{
     margin-bottom: 20px;
 }
 
+.mkt-btn-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.mkt-btn{
+    background-color: rgb(123, 49, 243);
+}
+
+.mkt-btn:hover{
+    background-color: rgb(228, 197, 253);
+}
+
+.arrow{
+    background: url(../images/ForwardButton.png);
+    height: 50px;
+    width: 50px;
+}
 
 @media screen and (max-width: 1049px) 
   {
